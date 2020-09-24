@@ -1,0 +1,1546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1254</width>
+    <height>681</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Al-Quran Recitation Recognition System</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>70</y>
+      <width>1041</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:1px solid black;</string>
+    </property>
+    <property name="currentIndex">
+     <number>5</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>1021</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Condensed</family>
+        <pointsize>28</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid black;</string>
+      </property>
+      <property name="text">
+       <string>DASHBOARD</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>140</y>
+        <width>381</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Condensed</family>
+        <pointsize>32</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid black;
+background-color: rgb(255, 157, 19);
+padding:10px;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;NO OF AYAHS 140&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>140</y>
+        <width>401</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Condensed</family>
+        <pointsize>33</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid black;
+background-color: rgb(255, 157, 19);
+padding:10px;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;TOTAL NO OF SURAHS 12&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>230</y>
+        <width>531</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Condensed</family>
+        <pointsize>32</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid black;
+background-color: rgb(255, 157, 19);
+padding:10px;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;NO OF RUKHS     44&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>1021</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Condensed</family>
+        <pointsize>28</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid black;</string>
+      </property>
+      <property name="text">
+       <string>SURAH SEARCH THROUGH VOICE</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>1021</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QFrame" name="frame_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>361</width>
+         <height>511</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:2px solid;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>341</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bahnschrift Condensed</family>
+          <pointsize>20</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:2px solid black;
+background-color: rgb(0, 255, 0);</string>
+        </property>
+        <property name="text">
+         <string>GIVE INPUT </string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="surha_text">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>310</y>
+          <width>341</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bahnschrift</family>
+          <pointsize>15</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;PLEASE SPEAK NOW!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="surah_combobox">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>250</y>
+          <width>301</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bahnschrift</family>
+          <pointsize>15</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>SELECT  YOUR LANGAUGE</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>ARABIC</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>URDU</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>ENGLISH</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="surha_what_you_said">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>380</y>
+          <width>341</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bahnschrift</family>
+          <pointsize>15</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:2px solid black;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;WHAT YOU SAID!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="surah_search_button">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>190</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bahnschrift Condensed</family>
+          <pointsize>20</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>SPEAK UP</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>10</y>
+         <width>641</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Condensed</family>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:2px solid black;
+background-color: rgb(0, 255, 0);</string>
+       </property>
+       <property name="text">
+        <string>POSSIBILE RESULT</string>
+       </property>
+      </widget>
+      <widget class="QScrollArea" name="scrollArea_surah_voice">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>60</y>
+         <width>641</width>
+         <height>441</height>
+        </rect>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>637</width>
+          <height>437</height>
+         </rect>
+        </property>
+        <widget class="QLabel" name="surah_matched_result">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>40</y>
+           <width>621</width>
+           <height>401</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Bahnschrift Condensed</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border:none;
+padding:10px;</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;['الْحَمْدُ لِلَّهِ فَاطِرِ السَّمَوَتِ وَالْأَرْضِ جَاعِلِ الْمَلَئِكَةِ رُسُلًا أُولِى أَجْنِحَةٍ مَّثْنَى وَثُلَثَ وَرُبَعَ يَزِيدُ فِى الْخَلْقِ مَا يَشَاءُ إِنَّ اللَّهَ عَلَى كُلِّ شَىْءٍ قَدِيرٌ', 'مَّا يَفْتَحِ اللَّهُ لِلنَّاسِ مِن رَّحْمَةٍ فَلَا مُمْسِكَ لَهَا وَمَا يُمْسِكْ فَلَا مُرْسِلَ لَهُ مِن بَعْدِهِ وَهُوَ الْعَزِيزُ الْحَكِيمُ', 'يَأَيُّهَا النَّاسُ اذْكُرُوا نِعْمَتَ اللَّهِ عَلَيْكُمْ هَلْ مِنْ خَلِقٍ غَيْرُ اللَّهِ يَرْزُقُكُم مِّنَ السَّمَاءِ وَالْأَرْضِ لَا إِلَهَ إِلَّا هُوَ فَأَنَّى تُؤْفَكُونَ', 'وَإِن يُكَذِّبُوكَ فَقَدْ كُذِّبَتْ رُسُلٌ مِّن قَبْلِكَ وَإِلَى اللَّهِ تُرْجَعُ الْأُمُورُ', 'يَأَيُّهَا النَّاسُ إِنَّ وَعْدَ اللَّهِ حَقٌّ فَلَا تَغُرَّنَّكُمُ الْحَيَوةُ الدُّنْيَا وَلَا يَغُرَّنَّكُم بِاللَّهِ الْغَرُورُ', 'إِنَّ الشَّيْطَنَ لَكُمْ عَدُوٌّ فَاتَّخِذُوهُ عَدُوًّا إِنَّمَا يَدْعُوا حِزْبَهُ لِيَكُونُوا مِنْ أَصْحَبِ السَّعِيرِ', 'الَّذِينَ كَفَرُوا لَهُمْ عَذَابٌ شَدِيدٌ وَالَّذِينَ ءَامَنُوا وَعَمِلُوا الصَّلِحَتِ لَهُم مَّغْفِرَةٌ وَأَجْرٌ كَبِيرٌ', 'أَفَمَن زُيِّنَ لَهُ سُوءُ عَمَلِهِ فَرَءَاهُ حَسَنًا فَإِنَّ اللَّهَ يُضِلُّ مَن يَشَاءُ وَيَهْدِى مَن يَشَاءُ فَلَا تَذْهَبْ نَفْسُكَ عَلَيْهِمْ حَسَرَتٍ إِنَّ اللَّهَ عَلِيمٌ بِمَا يَصْنَعُونَ', 'وَاللَّهُ الَّذِى أَرْسَلَ الرِّيَحَ فَتُثِيرُ سَحَابًا فَسُقْنَهُ إِلَى بَلَدٍ مَّيِّتٍ فَأَحْيَيْنَا بِهِ الْأَرْضَ بَعْدَ مَوْتِهَا كَذَلِكَ النُّشُورُ', 'مَن كَانَ يُرِيدُ الْعِزَّةَ فَلِلَّهِ الْعِزَّةُ جَمِيعًا إِلَيْهِ يَصْعَدُ الْكَلِمُ الطَّيِّبُ وَالْعَمَلُ الصَّلِحُ يَرْفَعُهُ وَالَّذِينَ يَمْكُرُونَ السَّئَِّاتِ لَهُمْ عَذَابٌ شَدِيدٌ وَمَكْرُ أُولَئِكَ هُوَ يَبُورُ', 'وَاللَّهُ خَلَقَكُم مِّن تُرَابٍ ثُمَّ مِن نُّطْفَةٍ ثُمَّ جَعَلَكُمْ أَزْوَجًا وَمَا تَحْمِلُ مِنْ أُنثَى وَلَا تَضَعُ إِلَّا بِعِلْمِهِ وَمَا يُعَمَّرُ مِن مُّعَمَّرٍ وَلَا يُنقَصُ مِنْ عُمُرِهِ إِلَّا فِى كِتَبٍ إِنَّ ذَلِكَ عَلَى اللَّهِ يَسِيرٌ', 'وَمَا يَسْتَوِى الْبَحْرَانِ هَذَا عَذْبٌ فُرَاتٌ سَائِغٌ شَرَابُهُ وَهَذَا مِلْحٌ أُجَاجٌ وَمِن كُلٍّ تَأْكُلُونَ لَحْمًا طَرِيًّا وَتَسْتَخْرِجُونَ حِلْيَةً تَلْبَسُونَهَا وَتَرَى الْفُلْكَ فِيهِ مَوَاخِرَ لِتَبْتَغُوا مِن فَضْلِهِ وَلَعَلَّكُمْ تَشْكُرُونَ', 'يُولِجُ الَّيْلَ فِى النَّهَارِ وَيُولِجُ النَّهَارَ فِى الَّيْلِ وَسَخَّرَ الشَّمْسَ وَالْقَمَرَ كُلٌّ يَجْرِى لِأَجَلٍ مُّسَمًّى ذَلِكُمُ اللَّهُ رَبُّكُمْ لَهُ الْمُلْكُ وَالَّذِينَ تَدْعُونَ مِن دُونِهِ مَا يَمْلِكُونَ مِن قِطْمِيرٍ', 'إِن تَدْعُوهُمْ لَا يَسْمَعُوا دُعَاءَكُمْ وَلَوْ سَمِعُوا مَا اسْتَجَابُوا لَكُمْ وَيَوْمَ الْقِيَمَةِ يَكْفُرُونَ بِشِرْكِكُمْ وَلَا يُنَبِّئُكَ مِثْلُ خَبِيرٍ', 'يَأَيُّهَا النَّاسُ أَنتُمُ الْفُقَرَاءُ إِلَى اللَّهِ وَاللَّهُ هُوَ الْغَنِىُّ الْحَمِيدُ', 'إِن يَشَأْ يُذْهِبْكُمْ وَيَأْتِ بِخَلْقٍ جَدِيدٍ', 'وَمَا ذَلِكَ عَلَى اللَّهِ بِعَزِيزٍ', 'وَلَا تَزِرُ وَازِرَةٌ وِزْرَ أُخْرَى وَإِن تَدْعُ مُثْقَلَةٌ إِلَى حِمْلِهَا لَا يُحْمَلْ مِنْهُ شَىْءٌ وَلَوْ كَانَ ذَا قُرْبَى إِنَّمَا تُنذِرُ الَّذِينَ يَخْشَوْنَ رَبَّهُم بِالْغَيْبِ وَأَقَامُوا الصَّلَوةَ وَمَن تَزَكَّى فَإِنَّمَا يَتَزَكَّى لِنَفْسِهِ وَإِلَى اللَّهِ الْمَصِيرُ', 'وَمَا يَسْتَوِى الْأَعْمَى وَالْبَصِيرُ', 'وَلَا الظُّلُمَتُ وَلَا النُّورُ', 'وَلَا الظِّلُّ وَلَا الْحَرُورُ', 'وَمَا يَسْتَوِى الْأَحْيَاءُ وَلَا الْأَمْوَتُ إِنَّ اللَّهَ يُسْمِعُ مَن يَشَاءُ وَمَا أَنتَ بِمُسْمِعٍ مَّن فِى الْقُبُورِ', 'إِنْ أَنتَ إِلَّا نَذِيرٌ', 'إِنَّا أَرْسَلْنَكَ بِالْحَقِّ بَشِيرًا وَنَذِيرًا وَإِن مِّنْ أُمَّةٍ إِلَّا خَلَا فِيهَا نَذِيرٌ', 'وَإِن يُكَذِّبُوكَ فَقَدْ كَذَّبَ الَّذِينَ مِن قَبْلِهِمْ جَاءَتْهُمْ رُسُلُهُم بِالْبَيِّنَتِ وَبِالزُّبُرِ وَبِالْكِتَبِ الْمُنِيرِ', 'ثُمَّ أَخَذْتُ الَّذِينَ كَفَرُوا فَكَيْفَ كَانَ نَكِيرِ', 'أَلَمْ تَرَ أَنَّ اللَّهَ أَنزَلَ مِنَ السَّمَاءِ مَاءً فَأَخْرَجْنَا بِهِ ثَمَرَتٍ مُّخْتَلِفًا أَلْوَنُهَا وَمِنَ الْجِبَالِ جُدَدٌ بِيضٌ وَحُمْرٌ مُّخْتَلِفٌ أَلْوَنُهَا وَغَرَابِيبُ سُودٌ', 'وَمِنَ النَّاسِ وَالدَّوَابِّ وَالْأَنْعَمِ مُخْتَلِفٌ أَلْوَنُهُ كَذَلِكَ إِنَّمَا يَخْشَى اللَّهَ مِنْ عِبَادِهِ الْعُلَمَؤُا إِنَّ اللَّهَ عَزِيزٌ غَفُورٌ', 'إِنَّ الَّذِينَ يَتْلُونَ كِتَبَ اللَّهِ وَأَقَامُوا الصَّلَوةَ وَأَنفَقُوا مِمَّا رَزَقْنَهُمْ سِرًّا وَعَلَانِيَةً يَرْجُونَ تِجَرَةً لَّن تَبُورَ', 'لِيُوَفِّيَهُمْ أُجُورَهُمْ وَيَزِيدَهُم مِّن فَضْلِهِ إِنَّهُ غَفُورٌ شَكُورٌ', 'وَالَّذِى أَوْحَيْنَا إِلَيْكَ مِنَ الْكِتَبِ هُوَ الْحَقُّ مُصَدِّقًا لِّمَا بَيْنَ يَدَيْهِ إِنَّ اللَّهَ بِعِبَادِهِ لَخَبِيرٌ بَصِيرٌ', 'ثُمَّ أَوْرَثْنَا الْكِتَبَ الَّذِينَ اصْطَفَيْنَا مِنْ عِبَادِنَا فَمِنْهُمْ ظَالِمٌ لِّنَفْسِهِ وَمِنْهُم مُّقْتَصِدٌ وَمِنْهُمْ سَابِقٌ بِالْخَيْرَتِ بِإِذْنِ اللَّهِ ذَلِكَ هُوَ الْفَضْلُ الْكَبِيرُ', 'جَنَّتُ عَدْنٍ يَدْخُلُونَهَا يُحَلَّوْنَ فِيهَا مِنْ أَسَاوِرَ مِن ذَهَبٍ وَلُؤْلُؤًا وَلِبَاسُهُمْ فِيهَا حَرِيرٌ', 'وَقَالُوا الْحَمْدُ لِلَّهِ الَّذِى أَذْهَبَ عَنَّا الْحَزَنَ إِنَّ رَبَّنَا لَغَفُورٌ شَكُورٌ', 'الَّذِى أَحَلَّنَا دَارَ الْمُقَامَةِ مِن فَضْلِهِ لَا يَمَسُّنَا فِيهَا نَصَبٌ وَلَا يَمَسُّنَا فِيهَا لُغُوبٌ', 'وَالَّذِينَ كَفَرُوا لَهُمْ نَارُ جَهَنَّمَ لَا يُقْضَى عَلَيْهِمْ فَيَمُوتُوا وَلَا يُخَفَّفُ عَنْهُم مِّنْ عَذَابِهَا كَذَلِكَ نَجْزِى كُلَّ كَفُورٍ', 'وَهُمْ يَصْطَرِخُونَ فِيهَا رَبَّنَا أَخْرِجْنَا نَعْمَلْ صَلِحًا غَيْرَ الَّذِى كُنَّا نَعْمَلُ أَوَلَمْ نُعَمِّرْكُم مَّا يَتَذَكَّرُ فِيهِ مَن تَذَكَّرَ وَجَاءَكُمُ النَّذِيرُ فَذُوقُوا فَمَا لِلظَّلِمِينَ مِن نَّصِيرٍ', 'إِنَّ اللَّهَ عَلِمُ غَيْبِ السَّمَوَتِ وَالْأَرْضِ إِنَّهُ عَلِيمٌ بِذَاتِ الصُّدُورِ', 'هُوَ الَّذِى جَعَلَكُمْ خَلَئِفَ فِى الْأَرْضِ فَمَن كَفَرَ فَعَلَيْهِ كُفْرُهُ وَلَا يَزِيدُ الْكَفِرِينَ كُفْرُهُمْ عِندَ رَبِّهِمْ إِلَّا مَقْتًا وَلَا يَزِيدُ الْكَفِرِينَ كُفْرُهُمْ إِلَّا خَسَارًا', 'قُلْ أَرَءَيْتُمْ شُرَكَاءَكُمُ الَّذِينَ تَدْعُونَ مِن دُونِ اللَّهِ أَرُونِى مَاذَا خَلَقُوا مِنَ الْأَرْضِ أَمْ لَهُمْ شِرْكٌ فِى السَّمَوَتِ أَمْ ءَاتَيْنَهُمْ كِتَبًا فَهُمْ عَلَى بَيِّنَتٍ مِّنْهُ بَلْ إِن يَعِدُ الظَّلِمُونَ بَعْضُهُم بَعْضًا إِلَّا غُرُورًا', 'إِنَّ اللَّهَ يُمْسِكُ السَّمَوَتِ وَالْأَرْضَ أَن تَزُولَا وَلَئِن زَالَتَا إِنْ أَمْسَكَهُمَا مِنْ أَحَدٍ مِّن بَعْدِهِ إِنَّهُ كَانَ حَلِيمًا غَفُورًا', 'وَأَقْسَمُوا بِاللَّهِ جَهْدَ أَيْمَنِهِمْ لَئِن جَاءَهُمْ نَذِيرٌ لَّيَكُونُنَّ أَهْدَى مِنْ إِحْدَى الْأُمَمِ فَلَمَّا جَاءَهُمْ نَذِيرٌ مَّا زَادَهُمْ إِلَّا نُفُورًا', 'اسْتِكْبَارًا فِى الْأَرْضِ وَمَكْرَ السَّيِّئِ وَلَا يَحِيقُ الْمَكْرُ السَّيِّئُ إِلَّا بِأَهْلِهِ فَهَلْ يَنظُرُونَ إِلَّا سُنَّتَ الْأَوَّلِينَ فَلَن تَجِدَ لِسُنَّتِ اللَّهِ تَبْدِيلًا وَلَن تَجِدَ لِسُنَّتِ اللَّهِ تَحْوِيلًا', 'أَوَلَمْ يَسِيرُوا فِى الْأَرْضِ فَيَنظُرُوا كَيْفَ كَانَ عَقِبَةُ الَّذِينَ مِن قَبْلِهِمْ وَكَانُوا أَشَدَّ مِنْهُمْ قُوَّةً وَمَا كَانَ اللَّهُ لِيُعْجِزَهُ مِن شَىْءٍ فِى السَّمَوَتِ وَلَا فِى الْأَرْضِ إِنَّهُ كَانَ عَلِيمًا قَدِيرًا', 'وَلَوْ يُؤَاخِذُ اللَّهُ النَّاسَ بِمَا كَسَبُوا مَا تَرَكَ عَلَى ظَهْرِهَا مِن دَابَّةٍ وَلَكِن يُؤَخِّرُهُمْ إِلَى أَجَلٍ مُّسَمًّى فَإِذَا جَاءَ أَجَلُهُمْ فَإِنَّ اللَّهَ كَانَ بِعِبَادِهِ بَصِيرًا']&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_4">
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>1021</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Condensed</family>
+        <pointsize>28</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid black;</string>
+      </property>
+      <property name="text">
+       <string>AYAH SEARCH THROUGH VOICE</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>1021</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QFrame" name="frame_4">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>361</width>
+         <height>511</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:2px solid;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="label_14">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>341</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bahnschrift Condensed</family>
+          <pointsize>20</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:2px solid black;
+background-color: rgb(0, 255, 0);</string>
+        </property>
+        <property name="text">
+         <string>GIVE INPUT </string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="ayah_speak">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>290</y>
+          <width>341</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bahnschrift</family>
+          <pointsize>15</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;PLEASE SPEAK NOW!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="ayah_what_you_said">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>370</y>
+          <width>341</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bahnschrift</family>
+          <pointsize>15</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:2px solid black;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;WHAT YOU SAID!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="combobox_ayah">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>240</y>
+          <width>301</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bahnschrift</family>
+          <pointsize>15</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>SELECT  YOUR LANGAUGE</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>ARABIC</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>URDU</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>ENGLISH</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPushButton" name="ayah_search_button">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>170</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bahnschrift Condensed</family>
+          <pointsize>20</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>SPEAK UP</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label_16">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>10</y>
+         <width>641</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Condensed</family>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:2px solid black;
+background-color: rgb(0, 255, 0);</string>
+       </property>
+       <property name="text">
+        <string>POSSIBILE RESULT</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="ayah_matched_result">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>120</y>
+         <width>641</width>
+         <height>381</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Condensed</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;
+padding:5px;</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;['الْحَمْدُ لِلَّهِ فَاطِرِ السَّمَوَتِ وَالْأَرْضِ جَاعِلِ الْمَلَئِكَةِ رُسُلًا أُولِى أَجْنِحَةٍ مَّثْنَى وَثُلَثَ وَرُبَعَ يَزِيدُ فِى الْخَلْقِ مَا يَشَاءُ إِنَّ اللَّهَ عَلَى كُلِّ شَىْءٍ قَدِيرٌ', 'مَّا يَفْتَحِ اللَّهُ لِلنَّاسِ مِن رَّحْمَةٍ فَلَا مُمْسِكَ لَهَا وَمَا يُمْسِكْ فَلَا مُرْسِلَ لَهُ مِن بَعْدِهِ وَهُوَ الْعَزِيزُ الْحَكِيمُ', 'يَأَيُّهَا النَّاسُ اذْكُرُوا نِعْمَتَ اللَّهِ عَلَيْكُمْ هَلْ مِنْ خَلِقٍ غَيْرُ اللَّهِ يَرْزُقُكُم مِّنَ السَّمَاءِ وَالْأَرْضِ لَا إِلَهَ إِلَّا هُوَ فَأَنَّى تُؤْفَكُونَ', 'وَإِن يُكَذِّبُوكَ فَقَدْ كُذِّبَتْ رُسُلٌ مِّن قَبْلِكَ وَإِلَى اللَّهِ تُرْجَعُ الْأُمُورُ', 'يَأَيُّهَا النَّاسُ إِنَّ وَعْدَ اللَّهِ حَقٌّ فَلَا تَغُرَّنَّكُمُ الْحَيَوةُ الدُّنْيَا وَلَا يَغُرَّنَّكُم بِاللَّهِ الْغَرُورُ', 'إِنَّ الشَّيْطَنَ لَكُمْ عَدُوٌّ فَاتَّخِذُوهُ عَدُوًّا إِنَّمَا يَدْعُوا حِزْبَهُ لِيَكُونُوا مِنْ أَصْحَبِ السَّعِيرِ', 'الَّذِينَ كَفَرُوا لَهُمْ عَذَابٌ شَدِيدٌ وَالَّذِينَ ءَامَنُوا وَعَمِلُوا الصَّلِحَتِ لَهُم مَّغْفِرَةٌ وَأَجْرٌ كَبِيرٌ', 'أَفَمَن زُيِّنَ لَهُ سُوءُ عَمَلِهِ فَرَءَاهُ حَسَنًا فَإِنَّ اللَّهَ يُضِلُّ مَن يَشَاءُ وَيَهْدِى مَن يَشَاءُ فَلَا تَذْهَبْ نَفْسُكَ عَلَيْهِمْ حَسَرَتٍ إِنَّ اللَّهَ عَلِيمٌ بِمَا يَصْنَعُونَ', 'وَاللَّهُ الَّذِى أَرْسَلَ الرِّيَحَ فَتُثِيرُ سَحَابًا فَسُقْنَهُ إِلَى بَلَدٍ مَّيِّتٍ فَأَحْيَيْنَا بِهِ الْأَرْضَ بَعْدَ مَوْتِهَا كَذَلِكَ النُّشُورُ', 'مَن كَانَ يُرِيدُ الْعِزَّةَ فَلِلَّهِ الْعِزَّةُ جَمِيعًا إِلَيْهِ يَصْعَدُ الْكَلِمُ الطَّيِّبُ وَالْعَمَلُ الصَّلِحُ يَرْفَعُهُ وَالَّذِينَ يَمْكُرُونَ السَّئَِّاتِ لَهُمْ عَذَابٌ شَدِيدٌ وَمَكْرُ أُولَئِكَ هُوَ يَبُورُ', 'وَاللَّهُ خَلَقَكُم مِّن تُرَابٍ ثُمَّ مِن نُّطْفَةٍ ثُمَّ جَعَلَكُمْ أَزْوَجًا وَمَا تَحْمِلُ مِنْ أُنثَى وَلَا تَضَعُ إِلَّا بِعِلْمِهِ وَمَا يُعَمَّرُ مِن مُّعَمَّرٍ وَلَا يُنقَصُ مِنْ عُمُرِهِ إِلَّا فِى كِتَبٍ إِنَّ ذَلِكَ عَلَى اللَّهِ يَسِيرٌ', 'وَمَا يَسْتَوِى الْبَحْرَانِ هَذَا عَذْبٌ فُرَاتٌ سَائِغٌ شَرَابُهُ وَهَذَا مِلْحٌ أُجَاجٌ وَمِن كُلٍّ تَأْكُلُونَ لَحْمًا طَرِيًّا وَتَسْتَخْرِجُونَ حِلْيَةً تَلْبَسُونَهَا وَتَرَى الْفُلْكَ فِيهِ مَوَاخِرَ لِتَبْتَغُوا مِن فَضْلِهِ وَلَعَلَّكُمْ تَشْكُرُونَ', 'يُولِجُ الَّيْلَ فِى النَّهَارِ وَيُولِجُ النَّهَارَ فِى الَّيْلِ وَسَخَّرَ الشَّمْسَ وَالْقَمَرَ كُلٌّ يَجْرِى لِأَجَلٍ مُّسَمًّى ذَلِكُمُ اللَّهُ رَبُّكُمْ لَهُ الْمُلْكُ وَالَّذِينَ تَدْعُونَ مِن دُونِهِ مَا يَمْلِكُونَ مِن قِطْمِيرٍ', 'إِن تَدْعُوهُمْ لَا يَسْمَعُوا دُعَاءَكُمْ وَلَوْ سَمِعُوا مَا اسْتَجَابُوا لَكُمْ وَيَوْمَ الْقِيَمَةِ يَكْفُرُونَ بِشِرْكِكُمْ وَلَا يُنَبِّئُكَ مِثْلُ خَبِيرٍ', 'يَأَيُّهَا النَّاسُ أَنتُمُ الْفُقَرَاءُ إِلَى اللَّهِ وَاللَّهُ هُوَ الْغَنِىُّ الْحَمِيدُ', 'إِن يَشَأْ يُذْهِبْكُمْ وَيَأْتِ بِخَلْقٍ جَدِيدٍ', 'وَمَا ذَلِكَ عَلَى اللَّهِ بِعَزِيزٍ', 'وَلَا تَزِرُ وَازِرَةٌ وِزْرَ أُخْرَى وَإِن تَدْعُ مُثْقَلَةٌ إِلَى حِمْلِهَا لَا يُحْمَلْ مِنْهُ شَىْءٌ وَلَوْ كَانَ ذَا قُرْبَى إِنَّمَا تُنذِرُ الَّذِينَ يَخْشَوْنَ رَبَّهُم بِالْغَيْبِ وَأَقَامُوا الصَّلَوةَ وَمَن تَزَكَّى فَإِنَّمَا يَتَزَكَّى لِنَفْسِهِ وَإِلَى اللَّهِ الْمَصِيرُ', 'وَمَا يَسْتَوِى الْأَعْمَى وَالْبَصِيرُ', 'وَلَا الظُّلُمَتُ وَلَا النُّورُ', 'وَلَا الظِّلُّ وَلَا الْحَرُورُ', 'وَمَا يَسْتَوِى الْأَحْيَاءُ وَلَا الْأَمْوَتُ إِنَّ اللَّهَ يُسْمِعُ مَن يَشَاءُ وَمَا أَنتَ بِمُسْمِعٍ مَّن فِى الْقُبُورِ', 'إِنْ أَنتَ إِلَّا نَذِيرٌ', 'إِنَّا أَرْسَلْنَكَ بِالْحَقِّ بَشِيرًا وَنَذِيرًا وَإِن مِّنْ أُمَّةٍ إِلَّا خَلَا فِيهَا نَذِيرٌ', 'وَإِن يُكَذِّبُوكَ فَقَدْ كَذَّبَ الَّذِينَ مِن قَبْلِهِمْ جَاءَتْهُمْ رُسُلُهُم بِالْبَيِّنَتِ وَبِالزُّبُرِ وَبِالْكِتَبِ الْمُنِيرِ', 'ثُمَّ أَخَذْتُ الَّذِينَ كَفَرُوا فَكَيْفَ كَانَ نَكِيرِ', 'أَلَمْ تَرَ أَنَّ اللَّهَ أَنزَلَ مِنَ السَّمَاءِ مَاءً فَأَخْرَجْنَا بِهِ ثَمَرَتٍ مُّخْتَلِفًا أَلْوَنُهَا وَمِنَ الْجِبَالِ جُدَدٌ بِيضٌ وَحُمْرٌ مُّخْتَلِفٌ أَلْوَنُهَا وَغَرَابِيبُ سُودٌ', 'وَمِنَ النَّاسِ وَالدَّوَابِّ وَالْأَنْعَمِ مُخْتَلِفٌ أَلْوَنُهُ كَذَلِكَ إِنَّمَا يَخْشَى اللَّهَ مِنْ عِبَادِهِ الْعُلَمَؤُا إِنَّ اللَّهَ عَزِيزٌ غَفُورٌ', 'إِنَّ الَّذِينَ يَتْلُونَ كِتَبَ اللَّهِ وَأَقَامُوا الصَّلَوةَ وَأَنفَقُوا مِمَّا رَزَقْنَهُمْ سِرًّا وَعَلَانِيَةً يَرْجُونَ تِجَرَةً لَّن تَبُورَ', 'لِيُوَفِّيَهُمْ أُجُورَهُمْ وَيَزِيدَهُم مِّن فَضْلِهِ إِنَّهُ غَفُورٌ شَكُورٌ', 'وَالَّذِى أَوْحَيْنَا إِلَيْكَ مِنَ الْكِتَبِ هُوَ الْحَقُّ مُصَدِّقًا لِّمَا بَيْنَ يَدَيْهِ إِنَّ اللَّهَ بِعِبَادِهِ لَخَبِيرٌ بَصِيرٌ', 'ثُمَّ أَوْرَثْنَا الْكِتَبَ الَّذِينَ اصْطَفَيْنَا مِنْ عِبَادِنَا فَمِنْهُمْ ظَالِمٌ لِّنَفْسِهِ وَمِنْهُم مُّقْتَصِدٌ وَمِنْهُمْ سَابِقٌ بِالْخَيْرَتِ بِإِذْنِ اللَّهِ ذَلِكَ هُوَ الْفَضْلُ الْكَبِيرُ', 'جَنَّتُ عَدْنٍ يَدْخُلُونَهَا يُحَلَّوْنَ فِيهَا مِنْ أَسَاوِرَ مِن ذَهَبٍ وَلُؤْلُؤًا وَلِبَاسُهُمْ فِيهَا حَرِيرٌ', 'وَقَالُوا الْحَمْدُ لِلَّهِ الَّذِى أَذْهَبَ عَنَّا الْحَزَنَ إِنَّ رَبَّنَا لَغَفُورٌ شَكُورٌ', 'الَّذِى أَحَلَّنَا دَارَ الْمُقَامَةِ مِن فَضْلِهِ لَا يَمَسُّنَا فِيهَا نَصَبٌ وَلَا يَمَسُّنَا فِيهَا لُغُوبٌ', 'وَالَّذِينَ كَفَرُوا لَهُمْ نَارُ جَهَنَّمَ لَا يُقْضَى عَلَيْهِمْ فَيَمُوتُوا وَلَا يُخَفَّفُ عَنْهُم مِّنْ عَذَابِهَا كَذَلِكَ نَجْزِى كُلَّ كَفُورٍ', 'وَهُمْ يَصْطَرِخُونَ فِيهَا رَبَّنَا أَخْرِجْنَا نَعْمَلْ صَلِحًا غَيْرَ الَّذِى كُنَّا نَعْمَلُ أَوَلَمْ نُعَمِّرْكُم مَّا يَتَذَكَّرُ فِيهِ مَن تَذَكَّرَ وَجَاءَكُمُ النَّذِيرُ فَذُوقُوا فَمَا لِلظَّلِمِينَ مِن نَّصِيرٍ', 'إِنَّ اللَّهَ عَلِمُ غَيْبِ السَّمَوَتِ وَالْأَرْضِ إِنَّهُ عَلِيمٌ بِذَاتِ الصُّدُورِ', 'هُوَ الَّذِى جَعَلَكُمْ خَلَئِفَ فِى الْأَرْضِ فَمَن كَفَرَ فَعَلَيْهِ كُفْرُهُ وَلَا يَزِيدُ الْكَفِرِينَ كُفْرُهُمْ عِندَ رَبِّهِمْ إِلَّا مَقْتًا وَلَا يَزِيدُ الْكَفِرِينَ كُفْرُهُمْ إِلَّا خَسَارًا', 'قُلْ أَرَءَيْتُمْ شُرَكَاءَكُمُ الَّذِينَ تَدْعُونَ مِن دُونِ اللَّهِ أَرُونِى مَاذَا خَلَقُوا مِنَ الْأَرْضِ أَمْ لَهُمْ شِرْكٌ فِى السَّمَوَتِ أَمْ ءَاتَيْنَهُمْ كِتَبًا فَهُمْ عَلَى بَيِّنَتٍ مِّنْهُ بَلْ إِن يَعِدُ الظَّلِمُونَ بَعْضُهُم بَعْضًا إِلَّا غُرُورًا', 'إِنَّ اللَّهَ يُمْسِكُ السَّمَوَتِ وَالْأَرْضَ أَن تَزُولَا وَلَئِن زَالَتَا إِنْ أَمْسَكَهُمَا مِنْ أَحَدٍ مِّن بَعْدِهِ إِنَّهُ كَانَ حَلِيمًا غَفُورًا', 'وَأَقْسَمُوا بِاللَّهِ جَهْدَ أَيْمَنِهِمْ لَئِن جَاءَهُمْ نَذِيرٌ لَّيَكُونُنَّ أَهْدَى مِنْ إِحْدَى الْأُمَمِ فَلَمَّا جَاءَهُمْ نَذِيرٌ مَّا زَادَهُمْ إِلَّا نُفُورًا', 'اسْتِكْبَارًا فِى الْأَرْضِ وَمَكْرَ السَّيِّئِ وَلَا يَحِيقُ الْمَكْرُ السَّيِّئُ إِلَّا بِأَهْلِهِ فَهَلْ يَنظُرُونَ إِلَّا سُنَّتَ الْأَوَّلِينَ فَلَن تَجِدَ لِسُنَّتِ اللَّهِ تَبْدِيلًا وَلَن تَجِدَ لِسُنَّتِ اللَّهِ تَحْوِيلًا', 'أَوَلَمْ يَسِيرُوا فِى الْأَرْضِ فَيَنظُرُوا كَيْفَ كَانَ عَقِبَةُ الَّذِينَ مِن قَبْلِهِمْ وَكَانُوا أَشَدَّ مِنْهُمْ قُوَّةً وَمَا كَانَ اللَّهُ لِيُعْجِزَهُ مِن شَىْءٍ فِى السَّمَوَتِ وَلَا فِى الْأَرْضِ إِنَّهُ كَانَ عَلِيمًا قَدِيرًا', 'وَلَوْ يُؤَاخِذُ اللَّهُ النَّاسَ بِمَا كَسَبُوا مَا تَرَكَ عَلَى ظَهْرِهَا مِن دَابَّةٍ وَلَكِن يُؤَخِّرُهُمْ إِلَى أَجَلٍ مُّسَمًّى فَإِذَا جَاءَ أَجَلُهُمْ فَإِنَّ اللَّهَ كَانَ بِعِبَادِهِ بَصِيرًا']&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_15">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>60</y>
+         <width>181</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Surah Name </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_23">
+       <property name="geometry">
+        <rect>
+         <x>600</x>
+         <y>60</y>
+         <width>181</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Surah Number</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_24">
+       <property name="geometry">
+        <rect>
+         <x>790</x>
+         <y>60</y>
+         <width>181</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>No of Ayah</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_5">
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>1021</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Condensed</family>
+        <pointsize>28</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid black;</string>
+      </property>
+      <property name="text">
+       <string>SYSTEM WORKING</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>1021</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_17">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>921</width>
+         <height>451</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">padding:10px;
+border:none;
+</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'BBC Nassim Urdu'; font-size:16px; color:#3f3f42;&quot;&gt;اس پوست سے ہیروئن بنتی ہے اور یہ سب سے زیادہ لت لگانے والی منشیات میں سے ایک ہے۔&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'BBC Nassim Urdu'; font-size:16px; color:#3f3f42;&quot;&gt;اقوام متحدہ میں منشیات کی غیر قانونی سمگلنگ کی نشاندہی کرنے اور اس سے نمٹنے کے ادارے یو این آو ڈی سی کے مطابق افغانستان میں پیدا ہونے والی پوست کا 80 فیصد حصہ ہلمند سمیت ملک کے جنوب مغربی حصوں سے آتا ہے۔&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'BBC Nassim Urdu'; font-size:16px; color:#3f3f42;&quot;&gt;اس کا مطلب ہے کہ دنیا بھر کی سپلائی کا دو تہائی حصہ۔ یہ وہ جگہ نہیں جو ملک کی معیشت کو کاربن سے پاک کرنے کی کوششوں میں سر فہرست دکھائی دیتی ہوں۔&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'BBC Nassim Urdu'; font-size:16px; color:#3f3f42;&quot;&gt;لیکن جونہی میں نے یہ سولر پینل دیکھا اس کے بعد مجھے اور بھی دکھائی دیے۔ بلکہ درحقیقت وہاں ہر کھیت کے پاس سولر پینل کی قطاریں تھیں اور یہ سنہ 2016 تھا۔&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'BBC Nassim Urdu'; font-size:16px; color:#3f3f42;&quot;&gt;اور یہ دور حاضر میں ہیروئن کی پیداوار میں آنے والے انقلاب کا تعین کر رہا تھا اور جس کا میں غیر دانستہ طور پر شاہد بنا۔ صرف میں فرد واحد نہیں تھا جس نے یہ بات نوٹس کی کہ افغان کاشتکار کم سے کم کاربن والی ٹیکنالوجی میں دلچسپی لے رہے ہیں۔&lt;/span&gt;&lt;/p&gt;&lt;h2 dir=&quot;rtl&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#fdfdfd;&quot;&gt;&lt;a name=&quot;-خلا-سے-ملنے-والے-شواہد-&quot;/&gt;&lt;span style=&quot; font-family:'BBC Nassim Urdu'; font-size:x-large; font-weight:696; color:#3f3f42;&quot;&gt;خ&lt;/span&gt;&lt;span style=&quot; font-family:'BBC Nassim Urdu'; font-size:x-large; font-weight:696; color:#3f3f42;&quot;&gt;لا سے ملنے والے شواہد&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;&lt;span style=&quot; font-family:'BBC Nassim Urdu'; font-size:16px; color:#3f3f42;&quot;&gt;انگلینڈ کے جنوب میں گلڈ فورڈ کے علاقے میں رچرڈ بریٹن اپنے دفتر میں کمپیوٹر پر جھکے ہوئے ہیں۔&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:16px; color:#000000;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>1021</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Condensed</family>
+        <pointsize>28</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid black;</string>
+      </property>
+      <property name="text">
+       <string>SEARCH BY TOPIC</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>1021</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">padding:10px;
+border:2px solid;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600; vertical-align:super;&quot;&gt;Available in Second Iteration&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; vertical-align:super;&quot;&gt;Under Developmental Process&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_6">
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>1021</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Condensed</family>
+        <pointsize>28</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid black;</string>
+      </property>
+      <property name="text">
+       <string>SEARCH SURAH THROUGH FILE</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_8">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>1021</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QFrame" name="frame_9">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>361</width>
+         <height>511</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:2px solid;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="label_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>341</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bahnschrift Condensed</family>
+          <pointsize>20</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:2px solid black;
+background-color: rgb(0, 255, 0);</string>
+        </property>
+        <property name="text">
+         <string>GIVE INPUT </string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="ayah_file_upload_status">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>230</y>
+          <width>341</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bahnschrift</family>
+          <pointsize>15</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;FILE IS NOT UPLOADED&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="ayah_found_in_file">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>280</y>
+          <width>341</width>
+          <height>221</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bahnschrift</family>
+          <pointsize>15</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:2px solid black;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;WHAT WE HAVE FOUND IN FILE&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="surah_search_file_choose">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>80</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bahnschrift Condensed</family>
+          <pointsize>20</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>CHOOSE FILE</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="surah_search_file_upload">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>150</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bahnschrift Condensed</family>
+          <pointsize>20</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>UPLOAD FILE</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label_21">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>10</y>
+         <width>641</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Condensed</family>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:2px solid black;
+background-color: rgb(0, 255, 0);</string>
+       </property>
+       <property name="text">
+        <string>POSSIBILE RESULT</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="ayah_match_file">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>70</y>
+         <width>631</width>
+         <height>401</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Condensed</family>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;
+padding:5px;</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:16px; color:#000000;&quot;&gt;DESIRED TEXT&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_7">
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>1021</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Condensed</family>
+        <pointsize>28</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid black;</string>
+      </property>
+      <property name="text">
+       <string>SEARCH AYAH THROUGH FILE</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_10">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>1021</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QFrame" name="frame_11">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>361</width>
+         <height>511</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:2px solid;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="label_20">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>341</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bahnschrift Condensed</family>
+          <pointsize>20</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:2px solid black;
+background-color: rgb(0, 255, 0);</string>
+        </property>
+        <property name="text">
+         <string>GIVE INPUT </string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="ayah_file_upload_status_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>230</y>
+          <width>341</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bahnschrift</family>
+          <pointsize>15</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;FILE IS NOT UPLOADED&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="surah_found_in_file_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>280</y>
+          <width>341</width>
+          <height>221</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bahnschrift</family>
+          <pointsize>15</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:2px solid black;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;WHAT WE HAVE FOUND IN FILE&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ayah_search_file_choose">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>80</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bahnschrift Condensed</family>
+          <pointsize>20</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>CHOOSE FILE</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ayah_search_file_upload">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>150</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bahnschrift Condensed</family>
+          <pointsize>20</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>UPLOAD FILE</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label_22">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>10</y>
+         <width>641</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Condensed</family>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:2px solid black;
+background-color: rgb(0, 255, 0);</string>
+       </property>
+       <property name="text">
+        <string>POSSIBILE RESULT</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="ayah_matched_result_4">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>70</y>
+         <width>631</width>
+         <height>401</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift Condensed</family>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;
+padding:5px;</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:16px; color:#000000;&quot;&gt;DESIRED TEXT&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>600</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bahnschrift Condensed</family>
+      <pointsize>21</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:2px solid black;</string>
+    </property>
+    <property name="text">
+     <string>EXIT</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>240</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bahnschrift Condensed</family>
+      <pointsize>21</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:2px solid black;</string>
+    </property>
+    <property name="text">
+     <string>SURAH SEARCH</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>300</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bahnschrift Condensed</family>
+      <pointsize>21</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:2px solid black;</string>
+    </property>
+    <property name="text">
+     <string>AYAH SEARCH</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>181</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bahnschrift Condensed</family>
+      <pointsize>31</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:2px solid black;
+background-color: rgb(0, 255, 0);
+</string>
+    </property>
+    <property name="locale">
+     <locale language="Urdu" country="Pakistan"/>
+    </property>
+    <property name="text">
+     <string>DASHBOARD</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>540</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bahnschrift Condensed</family>
+      <pointsize>21</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:2px solid black;</string>
+    </property>
+    <property name="text">
+     <string>FUTURE WORK</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>10</y>
+      <width>1061</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bahnschrift Condensed</family>
+      <pointsize>36</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:2px solid black;
+border-color:green;
+background-color: rgb(0, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>AL-QURAN RECITATION RECOGNITION SYSTEM </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_6">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>151</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-color: rgb(0, 0, 0);
+border:none;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../icons/icon.png</normaloff>../icons/icon.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>177</width>
+      <height>144</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_topic_search">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>360</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bahnschrift Condensed</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:2px solid black;</string>
+    </property>
+    <property name="text">
+     <string>TOPIC SEARCH</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>420</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bahnschrift Condensed</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:2px solid black;</string>
+    </property>
+    <property name="text">
+     <string>SURAH FILE UPLOAD</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_8">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>480</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bahnschrift Condensed</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:2px solid black;</string>
+    </property>
+    <property name="text">
+     <string>SURAH FILE UPLOAD</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

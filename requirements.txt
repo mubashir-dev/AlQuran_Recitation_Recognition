@@ -1,0 +1,4 @@
+playsound
+gTTS
+speech_recognition
+PyQt5

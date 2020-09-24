@@ -1,0 +1,3 @@
+[console_scripts]
+alfanous-console = alfanous.console:main
+
